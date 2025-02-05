@@ -23,6 +23,7 @@ class AddEmployee extends StatelessWidget {
             TextFormField(
               controller: _nameController,
               decoration: InputDecoration(labelText: "Name"),
+              keyboardType: TextInputType.text,
             ),
             TextFormField(
               controller: _ageController,
