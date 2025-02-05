@@ -1,16 +1,18 @@
 import 'package:flutter/material.dart';
 
 class AddEmployee extends StatelessWidget {
-   TextEditingController _nameController = TextEditingController();
-   TextEditingController _ageController = TextEditingController();
-   TextEditingController _salaryController = TextEditingController();
+  TextEditingController _nameController = TextEditingController();
+  TextEditingController _ageController = TextEditingController();
+  TextEditingController _salaryController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-
       appBar: AppBar(
-        title: Text("Add Employee",style: TextStyle(fontWeight: FontWeight.bold),),
+        title: Text(
+          "Add Employee",
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
         foregroundColor: Colors.black,
       ),
       body: Padding(
@@ -35,10 +37,11 @@ class AddEmployee extends StatelessWidget {
             SizedBox(height: 20),
             Center(
               child: ElevatedButton(
-                onPressed: () {
-
-                },
-                child: Text("Add Employee",style: TextStyle(fontSize: 17.0),),
+                onPressed: () {},
+                child: Text(
+                  "Add Employee",
+                  style: TextStyle(fontSize: 17.0),
+                ),
               ),
             ),
           ],
